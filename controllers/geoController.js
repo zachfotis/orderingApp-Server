@@ -80,6 +80,7 @@ const getAddressFromCoordinates = async (req, res) => {
   }
 };
 
+// ----------------- UTILITIES -----------------
 const addressComponentsToAddress = (addressComponents) => {
   const address = addressComponents
     .find((component) => {

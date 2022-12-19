@@ -1,10 +1,10 @@
 import express from 'express';
-import apiController from '../controllers/api.js';
+import geoController from '../controllers/geoController.js';
 
 const router = express.Router();
 
-router.get('/places', apiController.getPlaces);
-router.get('/coordinates', apiController.getCoordinatesFromAddress);
-router.get('/address', apiController.getAddressFromCoordinates);
+router.get('/places', geoController.getPlaces);
+router.get('/coordinates', geoController.getCoordinatesFromAddress);
+router.get('/address', geoController.getAddressFromCoordinates);
 
 export default router;
